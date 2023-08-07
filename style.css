@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+:root {
+  --ff: "Poppins", sans-serif;
+  --fs-p: 15px;
+}
+
+body {
+  font-family: var(--ff);
+  font-size: var(--fs-p);
+}
+.head {
+  text-align: center;
+  width: 33%;
+  margin: auto;
+}
+.container {
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  margin: 2% 12%;
+  align-items: center;
+}
+.content {
+  /* border: 1px solid black; */
+  margin: 15px;
+  padding: 8px 20px;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#first {
+  border-top: 2px solid hsl(180, 62%, 55%);
+}
+#second {
+  border-top: 2px solid hsl(0, 78%, 62%);
+}
+#third {
+  border-top: 2px solid hsl(34, 97%, 64%);
+}
+#fourth {
+  border-top: 2px solid hsl(212, 86%, 64%);
+}
+h4 {
+  font-size: large;
+  line-height: 0.5;
+}
+h4:first-child {
+  font-weight: lighter;
+  color: hsl(229, 6%, 66%);
+}
+.head-text {
+  color: hsl(229, 6%, 66%);
+  font-size: small;
+}
+.content p {
+  margin-bottom: 70px;
+  line-height: 26px;
+  color: hsl(229, 6%, 66%);
+  font-size: 14px;
+}
+img {
+  width: 15%;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  .head {
+    width: 65%;
+  }
+}
